@@ -2,6 +2,9 @@ import React, { useState, createContext } from 'react';
 
 import Header from './Header';
 import Post from './Post';
+
+import styles from './App.css'
+
 import { ThemeProvider } from './ThemeContext';
 
 function App() {
@@ -34,7 +37,7 @@ function App() {
   return (
     <ThemeProvider>
       <Header>
-        <h2>
+        <h2 className={styles.title}>
           Posts da semana
           <button onClick={handleRefresh}>Atualizar</button>
         </h2>
