@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 
 import Header from './Header';
 import Post from './Post';
+import { ThemeProvider } from './ThemeContext';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -18,7 +19,8 @@ function App() {
         id: Math.random(),
         title: `Title#0${prevState.length + 1}`,
         subtitle: `Sub#0${prevState.length + 1}`,
-        likes: 50
+        likes: 50,
+        read: false,
       }
     ]);
   }
@@ -26,12 +28,12 @@ function App() {
   function handleRemovePost(postId) {
     setPosts((prevState) => (
       prevState.filter(post => post.id !== postId)
-    ))
+    ));
   }
 
   return (
-    <>
-      <Header title="JStack's Blog">
+    <ThemeProvider>
+      <Header>
         <h2>
           Posts da semana
           <button onClick={handleRefresh}>Atualizar</button>
@@ -47,7 +49,7 @@ function App() {
           post={post}
         />
       ))}
-    </>
+    </ThemeProvider>
   );
 }
 
