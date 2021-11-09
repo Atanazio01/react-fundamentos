@@ -1,11 +1,11 @@
 import React, { useState, createContext } from 'react';
 
-import Header from './Header';
-import Post from './Post';
+import Header from '../Header';
+import Post from '../Post';
 
-import styles from './App.scss'
+import styles from './styles.scss'
 
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from '../../context/ThemeContext';
 
 function App() {
   const [posts, setPosts] = useState([
