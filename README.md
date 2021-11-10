@@ -7,28 +7,42 @@
 </p>
 
 <p align="center">
-  <img alt="React" src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=brightblue&labelColor=111111">
+  <img alt="ReactJS" src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=000000&labelColor=blue">
 <br>
 
 <p align="center">
-  <img alt="firstapi" src="https://github.com/Atanazio01/firstapi/blob/master/src/assets/images/print_project.png" width="100%">
+  <img alt="React Fundamentos" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/aplication.svg" width="100%">
 </p>
 
 ## 🛠 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node](https://nodejs.org/)
+- [React](https://pt-br.reactjs.org/)
 
 ## 💻 Projeto
 
-firstapi é uma API bem simples utilizando os padrões REST para fazer um CRUD de usuários, ela foi desenvolvida utilizando apenas NODEJS, para fixar os conteitos por trás de uma API REST, a API foi desenvolvida durante o curso JSTACK do Matheus Silva.
+Esse é um projeto simples desenvolvido durante o curso JStack, o intuíto desse projeto é aplicar os conceitos da bibliotéca React.
+Se trata de um blog simples onde podem ser inseridos posts e também alternar entre diferentes temas.
+Foram abordados temas como:
+
+- Babel
+- WebPack
+- Loaders
+- Servidor local de desenvolvimento
+- Componentes funcionais
+- React Fragment
+- Props / Children
+- Funções de Callbak via props
+- Context API
+- CSS / SASS / Styled Components
+- React Hooks
 
 ## ❓ Como executar
 
 - Clone o repositório
 - Instale as dependências com `yarn`
-- Inicie seu projeto com `node src/index.js`
+- Inicie seu projeto com `yarn dev`
 - O projeto será iniciado em http://localhost:3000
 
 
