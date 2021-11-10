@@ -1,10 +1,12 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, createContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/global';
 import Layout from './components/Layout';
 
 import themes from './styles/themes';
+
+export const LayoutContext = createContext({});
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -20,10 +22,14 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyle />
-      <Layout 
-        onToggleTheme={handleToggleTheme}
-        selectedTheme={theme}
-      />
+      <LayoutContext.Provider 
+        value={{
+          onToggleTheme: handleToggleTheme,
+          selectedTheme: theme,
+        }}
+      >
+        <Layout/>
+      </LayoutContext.Provider>
     </ThemeProvider>
   );
 };
