@@ -1,4 +1,4 @@
-<h1 align="center"><img alt="React" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/0_BTRGNVTctSoTOKQu.svg" width="50%"> </h1>
+<h1 align="center"><img alt="React" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/0_BTRGNVTctSoTOKQu.jpeg" width="50%"> </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -11,7 +11,8 @@
 <br>
 
 <p align="center">
-  <img alt="React Fundamentos" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/aplication.svg" width="100%">
+  <img alt="Application Dark" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/aplicationDark.png" width="100%">
+  <img alt="Application Light" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/aplicationLight.png" width="100%">
 </p>
 
 ## 🛠 Tecnologias
