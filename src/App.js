@@ -1,4 +1,5 @@
 import React, { useMemo, useState, createContext } from 'react';
+import useLocalState from './components/CustomHooks/useLocalState'
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/global';
@@ -9,7 +10,7 @@ import themes from './styles/themes';
 export const LayoutContext = createContext({});
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useLocalState('dark');
 
   const currentTheme = useMemo(() => {
     return themes[theme] || themes.dark;
