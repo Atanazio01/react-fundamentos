@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="React" src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=brightblue&labelColor=000000">
+  <img alt="React" src="https://img.shields.io/static/v1?label=React&message=17.0.2&color=brightblue&labelColor=111111">
 <br>
 
 <p align="center">
