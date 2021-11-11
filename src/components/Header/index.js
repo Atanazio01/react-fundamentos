@@ -17,13 +17,13 @@ export default function Header() {
   return (
     <Container>
       <h1>JStack's Blog</h1>
+      <button onClick={handleNavigate} style={{ color: '#fff' }}>Voltar para Home</button>
       <button
         type="button"
         onClick={onToggleTheme}
       >
         {selectedTheme === 'dark' ? '🌞' : '🌚'}
       </button>
-      <button onClick={handleNavigate} style={{ color: '#fff' }}>Voltar para Home</button>
     </Container>
   );
 }

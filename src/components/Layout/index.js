@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, useHistory } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -14,7 +14,7 @@ export default function Layout() {
       <Nav>
         <Link to="/">Home</Link>
         <Link to="/posts">Posts</Link>
-        <Link to="/posts/12313156">Post</Link>
+        <Link to="/posts/id">Post</Link>
       </Nav>
       <Routes />
       <Footer />
